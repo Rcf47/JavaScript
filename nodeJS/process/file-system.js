@@ -25,6 +25,8 @@ const fsPromise = require('fs/promises')
 // })
 
 // fsPromise.mkdir(path.resolve('dir')).catch(err => console.log(err))
-fsPromise.writeFile(path.resolve('test.txt'), 'Hello World')
-  .then(fsPromise.appendFile(path.resolve('test.txt'), 'Hello from Append'))
-  .catch(err => console.log(err))
+//
+// fsPromise.writeFile(path.resolve('test.txt'), 'Hello World \n')
+//   .then(fsPromise.appendFile(path.resolve('test.txt'), 'Hello from Append'))
+//   .catch(err => console.log(err))
+fsPromise.readFile(path.resolve('test.txt'), { encoding: 'utf8' }).then(data => console.log(data)).catch(err => console.log(err))
