@@ -10,8 +10,15 @@ const path = require('path')
 //   console.log("Directory created")
 // })
 
-fs.rmdir(path.resolve('dir'), (err) => {
+// fs.rmdir(path.resolve('dir'), (err) => {
+//   if (err) {
+//     throw err;
+//   }
+// })
+
+fs.writeFile(path.resolve(__dirname, 'test.txt'), 'Hello World', (err) => {
   if (err) {
     throw err;
   }
+  console.log("File created")
 })
