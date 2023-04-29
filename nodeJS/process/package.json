@@ -1,0 +1,16 @@
+{
+  "name": "node_education",
+  "version": "1.0.0",
+  "description": "for nodeJS education",
+  "main": "practice.js",
+  "scripts": {
+    "start": "node ./process.env.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vadim",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3"
+  }
+}
