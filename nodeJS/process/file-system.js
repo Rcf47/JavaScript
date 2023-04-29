@@ -24,4 +24,7 @@ const fsPromise = require('fs/promises')
 //   console.log("File created")
 // })
 
-fsPromise.mkdir(path.resolve('dir')).catch(err => console.log(err))
+// fsPromise.mkdir(path.resolve('dir')).catch(err => console.log(err))
+fsPromise.writeFile(path.resolve('test.txt'), 'Hello World')
+  .then(fsPromise.appendFile(path.resolve('test.txt'), 'Hello from Append'))
+  .catch(err => console.log(err))
