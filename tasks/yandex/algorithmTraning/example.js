@@ -12,4 +12,3 @@ readline.question(``, (numbers) => {
   console.log(sum);
   readline.close();
 });
-
