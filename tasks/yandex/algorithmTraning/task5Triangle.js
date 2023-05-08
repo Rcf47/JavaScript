@@ -36,7 +36,7 @@ if (require.main === module) {
       return
     }
     const [pointCoordinateX, pointCoordinateY] = line.split(' ').map(Number)
-    console.log(isDotInside(sideLength, pointCoordinateX, pointCoordinateY))
+    isDotInside(sideLength, pointCoordinateX, pointCoordinateY)
     rl.close()
   })
 } else {
