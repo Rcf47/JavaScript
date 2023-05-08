@@ -5,14 +5,17 @@
   "_version": "2.0.0",
 
   "compilerOptions": {
-    "lib": ["es2023"],
+    "lib": ["es2023", "dom"],
     "module": "commonjs",
     "target": "es2022",
+    "outDir": "out",
+    "sourceMap": true,
 
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+
   }
 }
