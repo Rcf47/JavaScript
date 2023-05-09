@@ -88,7 +88,7 @@ let mapArray = array.map(item => item + 1) //return new array with calling funct
 
 //sort()
 //--------------
-//array.sort() // sort array like string we should give function that
+//array.sort() // sort array like string we should give function that. return reference of the array now sorted
 //return 0, 1 , -1 for correct sort numbers
 //console.log(array)
 
