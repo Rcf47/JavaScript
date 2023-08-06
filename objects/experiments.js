@@ -53,4 +53,11 @@ console.log(Object())
 // console.log(symbolsArray)
 
 const hasOwnProperty = exampleObject.hasOwnProperty("firstName")
-console.log(hasOwnProperty)
+// console.log(hasOwnProperty)
+let hello = Object("Hello")
+let hello1 = "Hello world"
+let hello2 = Object(false)
+// console.log(hello)
+// console.log(hello2)
+// console.log(hello1)
+// console.log(hello2.toString())
