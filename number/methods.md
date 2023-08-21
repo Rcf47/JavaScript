@@ -1,6 +1,6 @@
-1. isInteger
+1. isNan
 2. isFinite
-3. isNan
+3. isInteger
 4. isSafeInteger
 5. parseFloat
 6. parseInt
