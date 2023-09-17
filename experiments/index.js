@@ -66,4 +66,4 @@ const person = {
   "city": "Sosonovoborsk"
 }
 
-console.log(person[3])
+console.log('vadim')
