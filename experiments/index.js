@@ -1,5 +1,5 @@
 const splitObjectJustForFun = { a: 2, b: 3, c: 4, d: 5, e: 6 };
-//console.log("Hello world");
+//console.log("Hmello world");
 
 function hello() {
   let hello = "Hello";
@@ -63,7 +63,25 @@ const person = {
   "name": "Vadim",
   age: 35,
   3: 4,
-  "city": "Sosonovoborsk"
+  "city": "Sosonovoborsk",
+  [2 - 1]: "hello"
 }
 
-console.log('vadim')
+const salaries = {
+  Pete: 140,
+  John: 230,
+  Antony: 300
+}
+let tmp = 0
+let tmp1 = 0
+
+for (let [, val] of Object.entries(salaries)) {
+  tmp += val
+}
+for (let key in salaries) {
+  tmp1 += salaries[key]
+}
+
+//console.log(tmp)
+//console.log("age" in person)
+//console.log(person[4 - 3])
