@@ -15,3 +15,4 @@
 15. padStart(targetLength, padString) - добавляет символы в начало строки до указанной длины.
 16. padEnd(targetLength, padString) - добавляет символы в конец строки до указанной длины.
 17. replace(searchValue, replaceValue) - заменяет подстроку на указанное значение.
+18. at(index) - возвращает значение по индексу
