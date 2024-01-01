@@ -60,28 +60,69 @@ arrayForEach.forEach((el) => el + 1);
 //console.log('hello');
 
 const person = {
-  "name": "Vadim",
+  name: "Vadim",
   age: 35,
   3: 4,
-  "city": "Sosonovoborsk",
-  [2 - 1]: "hello"
-}
+  city: "Sosonovoborsk",
+  [2 - 1]: "hello",
+};
 
 const salaries = {
   Pete: 140,
   John: 230,
-  Antony: 300
-}
-let tmp = 0
-let tmp1 = 0
+  Antony: 300,
+};
+let tmp = 0;
+let tmp1 = 0;
 
 for (let [, val] of Object.entries(salaries)) {
-  tmp += val
+  tmp += val;
 }
 for (let key in salaries) {
-  tmp1 += salaries[key]
+  tmp1 += salaries[key];
 }
 
+const num1 = 3;
+const num2 = 5;
+const result = num1 | num2; //побитовое сложение
 //console.log(tmp)
+
 //console.log("age" in person)
 //console.log(person[4 - 3])
+const myVariable = 3;
+
+const aa = 3;
+const bb = 2;
+const cc = aa + bb;
+const mmm = cc + 1;
+
+function sum2(a, b) {
+  return a + b;
+}
+
+codeFunction1 = new sum2();
+console.log(codeFunction1); // код функции внутри через оператор new
+function codeWriteTry(name) {
+  console.log(name);
+}
+(function(name) {
+  const NAME = name;
+  console.log(NAME);
+})("Vadim");
+
+let myNewobj = {
+  name: "Vadim",
+};
+
+//console.log(myNewobj);
+function awesomeFunc(funcOb) {
+  funcOb.name = "Pavel";
+}
+
+awesomeFunc(myNewobj);
+//console.log(myNewobj);
+var arrNew = {};
+arrNew[0] = 1;
+arrNew[1] = 2;
+
+console.log(arrNew);

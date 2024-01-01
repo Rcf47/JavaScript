@@ -1,6 +1,7 @@
 let hello = () => {
-	console.log("hello");
+  console.log("hello");
 };
+let myVariable = "hello";
 let find = "why this";
 let some = "hello";
 let here = "some text";
@@ -12,4 +13,4 @@ let sameNew1;
 
 let another;
 
-function cheese() {}
+function cheese() { }
