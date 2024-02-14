@@ -126,3 +126,6 @@ arrNew[0] = 1;
 arrNew[1] = 2;
 
 console.log(arrNew);
+
+let someobj = Object.create(Object);
+console.log(someobj);
