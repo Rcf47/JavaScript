@@ -28,10 +28,10 @@
 //
 //console.log(greeting("Bob"))
 
-var a = "test 1"
+var a = "test 1";
 function test() {
   console.log(a);
-  var a = "test 2"
+  var a = "test 2";
 }
 
 // for (var i = 0; i <= 5; i++) {
@@ -42,11 +42,11 @@ function createIncrement() {
   let count = 0;
   function increment() {
     console.log(count++);
-    console.log(count)
+    console.log(count);
   }
   function log() {
     let message = `Count is ${count}`;
-    console.log(message)
+    console.log(message);
   }
   return [increment, log];
 }
@@ -57,15 +57,21 @@ const [increment, log] = createIncrement();
 // increment() // 2
 // log() // 3
 
-const { x: hello, y: world, z: how } = { x: 2, y: 4.5, z: 3 }
+const { x: hello, y: world, z: how } = { x: 2, y: 4.5, z: 3 };
 
 //console.log(hello, world, how)
 
-const obj = { name: { firstName: "Vadim" }, surname: { secondName: "Cherepanov" } }
+const obj = {
+  name: { firstName: "Vadim" },
+  surname: { secondName: "Cherepanov" },
+};
 
-const { name: { firstName: myName } } = obj
+const {
+  name: { firstName: myName },
+} = obj;
 // console.log(myName)
-let first = 8, second = 6
+let first = 8,
+  second = 6;
 
 // (() => {
 //   "use strict";
@@ -74,35 +80,34 @@ let first = 8, second = 6
 // })();
 // console.log(first, second)
 
-let arr = [1, 2, 3, 4, 5]
+let arr = [1, 2, 3, 4, 5];
 
-let [, , ...newArr] = arr
+let [, , ...newArr] = arr;
 // console.log(newArr)
 //
-let stats = { a: "Vadim", c: "Cherepanov" }
+let stats = { a: "Vadim", c: "Cherepanov" };
 
 function half({ a, c }) {
-  return `${a} ${c}`
+  return `${a} ${c}`;
 }
 // console.log(half(stats))
 const result = {
   success: ["max-length", "no-amd", "prefer-arrow-functions"],
   failure: ["no-var", "var-on-top", "linebreak"],
-  skipped: ["id-blacklist", "no-dup-keys"]
+  skipped: ["id-blacklist", "no-dup-keys"],
 };
 function makeList(arr) {
   const resultDisplayArray = [];
   for (let everyItem of arr) {
-    resultDisplayArray.push(everyItem)
+    resultDisplayArray.push(everyItem);
   }
-
 
   return resultDisplayArray;
 }
 /**
  * makeList(result.failure) should return:
  * [ `<li class="text-warning">no-var</li>`,
- *   `<li class="text-warning">var-on-top</li>`, 
+ *   `<li class="text-warning">var-on-top</li>`,
  *   `<li class="text-warning">linebreak</li>` ]
  **/
 const resultDisplayArray = makeList(result.failure);
@@ -116,4 +121,3 @@ for (let item of arr) {
 // console.log(typeof null)
 let double = (num) => num * 2;
 let increment2 = (num) => num + 1;
-
