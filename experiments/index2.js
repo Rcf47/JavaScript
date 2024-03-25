@@ -121,3 +121,6 @@ for (let item of arr) {
 // console.log(typeof null)
 let double = (num) => num * 2;
 let increment2 = (num) => num + 1;
+
+var theThing = "hello";
+console.log(global.theThing);

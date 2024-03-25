@@ -101,7 +101,7 @@ function sum2(a, b) {
 }
 
 codeFunction1 = new sum2();
-console.log(codeFunction1); // код функции внутри через оператор new
+//console.log(codeFunction1); // код функции внутри через оператор new
 function codeWriteTry(name) {
   console.log(name);
 }
@@ -125,7 +125,16 @@ var arrNew = {};
 arrNew[0] = 1;
 arrNew[1] = 2;
 
-console.log(arrNew);
+//console.log(arrNew);
 
-let someobj = Object.create(Object);
-console.log(someobj);
+let func = (arr) => {
+  let res = 0;
+  for (let el of arr) {
+    res = res ^ el;
+  }
+  return res;
+};
+
+console.log(isFinite("0"));
+console.log(Number.isFinite("0"));
+console.log(typeof (1234.567).toFixed(2));
